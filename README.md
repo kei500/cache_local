@@ -1,6 +1,6 @@
 # CacheLocal
 [![Gem Version](https://badge.fury.io/rb/cache_local.png)](http://badge.fury.io/rb/cache_local)  
-CacheLocal provides very simple cache function. There are two types of chache: file cache and process cache.
+CacheLocal provides very simple cache function. There are two types of cache: file cache and process cache.
 
 ## Installation
 
@@ -23,7 +23,7 @@ require 'cache_local'
 
 file_cache = CacheLocal::File.new(path_to_cache_directory, namespace) 
 file_cache.set(key, value)
-file_cache.get(key
+file_cache.get(key)
 file_cache.delete(key)
 file_cache.set(key, value, expiration_time) # enable to specify expiration time [sec]
 ```
